@@ -30,6 +30,10 @@ public class Goods {
             return;
         }
 
+        if (this.name.equals("Sulfuras")) {
+            return;
+        }
+
         updateRegularGoods();
     }
 
