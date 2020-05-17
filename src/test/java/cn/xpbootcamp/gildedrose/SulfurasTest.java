@@ -12,7 +12,7 @@ public class SulfurasTest {
         double oldQuality = 47;
         int oldSellIn = 0;
 
-        SulfurasGoods goods = new SulfurasGoods("Sulfuras", oldQuality, oldSellIn);
+        SulfurasGoods goods = (SulfurasGoods) Goods.createGoods("Sulfuras", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
