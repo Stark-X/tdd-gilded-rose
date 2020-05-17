@@ -20,12 +20,21 @@ public class Goods {
     }
 
     public void updateByDay() {
-        reduceQuality();
-        this.sellIn -= 1;
-
-        if (this.sellIn <= 0) {
+        if (this.name.equals("AgedBrie")) {
+            this.quality += 1;
+            reduceSellIn();
+        } else {
             reduceQuality();
+            reduceSellIn();
+            if (this.sellIn <= 0) {
+                reduceQuality();
+            }
         }
+
+    }
+
+    private void reduceSellIn() {
+        this.sellIn -= 1;
     }
 
     private void reduceQuality() {
