@@ -20,7 +20,9 @@ public class Goods {
     }
 
     public void updateByDay() {
-        this.quality -= 1;
+        if (this.quality != 0) {
+            this.quality -= 1;
+        }
         this.sellIn -= 1;
     }
 
