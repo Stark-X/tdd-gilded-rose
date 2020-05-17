@@ -11,7 +11,7 @@ public class BackstagePassTest {
         double oldQuality = 49;
         int oldSellIn = 11;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -25,7 +25,7 @@ public class BackstagePassTest {
         double oldQuality = 48;
         int oldSellIn = 6;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -39,7 +39,7 @@ public class BackstagePassTest {
         double oldQuality = 47;
         int oldSellIn = 1;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -53,7 +53,7 @@ public class BackstagePassTest {
         double oldQuality = 48;
         int oldSellIn = 1;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -67,7 +67,7 @@ public class BackstagePassTest {
         double oldQuality = 47;
         int oldSellIn = 1;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -81,7 +81,7 @@ public class BackstagePassTest {
         double oldQuality = 47;
         int oldSellIn = 0;
 
-        RegularGoods goods = new RegularGoods("BackstagePass", oldQuality, oldSellIn);
+        BackstagePassGoods goods = new BackstagePassGoods("BackstagePass", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
