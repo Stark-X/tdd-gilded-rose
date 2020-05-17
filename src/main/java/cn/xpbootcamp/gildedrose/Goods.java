@@ -50,6 +50,9 @@ public class Goods {
             this.enhanceQuality();
         }
         this.sellIn -= 1;
+        if (this.sellIn < 0) {
+            this.quality = 0;
+        }
     }
 
     private void updateRegularGoods() {
