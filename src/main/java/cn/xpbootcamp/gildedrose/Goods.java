@@ -21,14 +21,32 @@ public class Goods {
 
     public void updateByDay() {
         if (this.name.equals("AgedBrie")) {
-            enhanceQuality();
-            reduceSellIn();
-            if (this.sellIn < 0) {
-                enhanceQuality();
-            }
+            updateAgedBrie();
             return;
         }
 
+        if (this.name.equals("BackstagePass")) {
+            updateBackstagePass();
+            return;
+        }
+
+        updateRegularGoods();
+    }
+
+    private void updateAgedBrie() {
+        enhanceQuality();
+        reduceSellIn();
+        if (this.sellIn < 0) {
+            enhanceQuality();
+        }
+    }
+
+    private void updateBackstagePass() {
+        this.quality += 1;
+        this.sellIn -= 1;
+    }
+
+    private void updateRegularGoods() {
         reduceQuality();
         reduceSellIn();
         if (this.sellIn <= 0) {
