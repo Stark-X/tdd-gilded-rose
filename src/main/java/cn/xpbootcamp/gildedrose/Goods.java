@@ -11,6 +11,19 @@ public class Goods {
         this.sellIn = sellIn;
     }
 
+    public static Goods createGoods(String name, double quality, int sellIn) {
+        switch (name) {
+            case "AgedBrie":
+                return new AgedBrieGoods(name, quality, sellIn);
+            case "BackstagePass":
+                return new BackstagePassGoods(name, quality, sellIn);
+            case "Sulfuras":
+                return new SulfurasGoods(name, quality, sellIn);
+            default:
+                return new RegularGoods(name, quality, sellIn);
+        }
+    }
+
     public double getQuality() {
         return this.quality;
     }
