@@ -20,10 +20,18 @@ public class Goods {
     }
 
     public void updateByDay() {
-        if (this.quality != 0) {
+        reduceQuality();
+        this.sellIn -= 1;
+
+        if (this.sellIn <= 0) {
+            reduceQuality();
+        }
+    }
+
+    private void reduceQuality() {
+        if (this.quality > 0) {
             this.quality -= 1;
         }
-        this.sellIn -= 1;
     }
 
     public String getName() {

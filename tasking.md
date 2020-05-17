@@ -15,18 +15,12 @@
     - Then quality still 0
     - And sellIn reduce 1
 3. 
-    - Given the good's quality is 2,
+    - Given the good's quality is greater or equal than 2,
     - And good is expired,
     - When a day pass,
     - Then quality reduce 2
     - And sellIn reduce 1
 4. 
-    - Given the good's quality is greater than 2,
-    - And good is expired,
-    - When a day pass,
-    - Then quality reduce 2
-    - And sellIn reduce 1
-5. 
     - Given the good's quality is 1,
     - And good is expired,
     - When a day pass,
