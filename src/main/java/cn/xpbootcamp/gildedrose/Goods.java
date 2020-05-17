@@ -42,7 +42,10 @@ public class Goods {
     }
 
     private void updateBackstagePass() {
-        this.quality += 1;
+        this.enhanceQuality();
+        if (this.sellIn > 5 && this.sellIn <= 10) {
+            this.enhanceQuality();
+        }
         this.sellIn -= 1;
     }
 
