@@ -48,7 +48,7 @@
     - Then quality enhance 2
     - And sellIn reduce 1
 4. 
-    - Given the good's quality is 48,
+    - Given the good's quality is 49,
     - And good is expired,
     - When a day pass,
     - Then quality is 50
