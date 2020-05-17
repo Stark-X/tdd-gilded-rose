@@ -20,21 +20,19 @@ public class Goods {
     }
 
     public void updateByDay() {
-        if (this.name.equals("AgedBrie")) {
-            updateAgedBrie();
-            return;
+        switch (this.name) {
+            case "AgedBrie":
+                updateAgedBrie();
+                break;
+            case "BackstagePass":
+                updateBackstagePass();
+                break;
+            case "Sulfuras":
+                break;
+            default:
+                updateRegularGoods();
         }
 
-        if (this.name.equals("BackstagePass")) {
-            updateBackstagePass();
-            return;
-        }
-
-        if (this.name.equals("Sulfuras")) {
-            return;
-        }
-
-        updateRegularGoods();
     }
 
     private void updateAgedBrie() {
