@@ -47,4 +47,18 @@ public class GoodsTest {
         assertThat(newQuality, equalTo(oldQuality - 2));
         assertThat(newSellIn, equalTo(oldSellIn - 1));
     }
+
+    @Test
+    void should_quality_is_0_and_sellIn_reduce_1_when_a_day_pass_given_quality_is_1_and_good_is_expired() {
+        double oldQuality = 1;
+        int oldSellIn = 0;
+
+        Goods goods = new Goods("Regular", oldQuality, oldSellIn);
+        goods.updateByDay();
+        double newQuality = goods.getQuality();
+        int newSellIn = goods.getSellIn();
+
+        assertThat(newQuality, equalTo(0.0));
+        assertThat(newSellIn, equalTo(oldSellIn - 1));
+    }
 }
