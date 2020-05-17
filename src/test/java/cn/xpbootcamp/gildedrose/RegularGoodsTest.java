@@ -11,7 +11,7 @@ public class RegularGoodsTest {
         double oldQuality = 1;
         int oldSellIn = 1;
 
-        Goods goods = new Goods("Regular", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("Regular", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -25,7 +25,7 @@ public class RegularGoodsTest {
         double oldQuality = 0;
         int oldSellIn = 1;
 
-        Goods goods = new Goods("Regular", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("Regular", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -39,7 +39,7 @@ public class RegularGoodsTest {
         double oldQuality = 2;
         int oldSellIn = 0;
 
-        Goods goods = new Goods("Regular", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("Regular", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -53,7 +53,7 @@ public class RegularGoodsTest {
         double oldQuality = 1;
         int oldSellIn = 0;
 
-        Goods goods = new Goods("Regular", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("Regular", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();

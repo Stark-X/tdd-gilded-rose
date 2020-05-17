@@ -11,7 +11,7 @@ public class AgedBrieTest {
         double oldQuality = 1;
         int oldSellIn = 1;
 
-        Goods goods = new Goods("AgedBrie", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("AgedBrie", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -25,7 +25,7 @@ public class AgedBrieTest {
         double oldQuality = 50;
         int oldSellIn = 1;
 
-        Goods goods = new Goods("AgedBrie", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("AgedBrie", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -39,7 +39,7 @@ public class AgedBrieTest {
         double oldQuality = 48;
         int oldSellIn = 0;
 
-        Goods goods = new Goods("AgedBrie", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("AgedBrie", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
@@ -53,7 +53,7 @@ public class AgedBrieTest {
         double oldQuality = 49;
         int oldSellIn = 0;
 
-        Goods goods = new Goods("AgedBrie", oldQuality, oldSellIn);
+        RegularGoods goods = new RegularGoods("AgedBrie", oldQuality, oldSellIn);
         goods.updateByDay();
         double newQuality = goods.getQuality();
         int newSellIn = goods.getSellIn();
